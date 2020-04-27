@@ -14,12 +14,28 @@ class ViewController: UIViewController {
     @IBOutlet weak var progressBar: UIProgressView!
     @IBOutlet weak var trueButton: UIButton!
     @IBOutlet weak var falseButton: UIButton!
+    
+    var quiz = [
+        "1 + 1 = 2",
+        "3 + 3 = 6",
+        "5 + 5 = 10"
+    ]
+    
+    var questionIndex = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        questionText.text = quiz[questionIndex]
     }
 
     @IBAction func answerSelected(_ sender: UIButton) {
+        questionIndex += 1
+        updateUI()
+        
+    }
+    
+    func updateUI() {
+        questionText.text = quiz[questionIndex]
     }
     
 }
