@@ -69,6 +69,13 @@
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="tintColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ghx-04-bvz">
+                                <rect key="frame" x="29" y="74" width="68" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.97276157140731812" green="0.97295099496841431" blue="0.97276014089584351" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -77,6 +84,7 @@
                         <outlet property="falseButton" destination="I71-f7-wCb" id="IyJ-nz-VVC"/>
                         <outlet property="progressBar" destination="401-Lk-T7s" id="dbT-7N-OmW"/>
                         <outlet property="questionText" destination="CCE-v7-nvs" id="7h2-2U-ofN"/>
+                        <outlet property="score" destination="Ghx-04-bvz" id="0Zv-pi-M93"/>
                         <outlet property="trueButton" destination="zw1-Ur-33f" id="8IC-zA-HOZ"/>
                     </connections>
                 </viewController>

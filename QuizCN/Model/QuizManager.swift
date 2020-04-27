@@ -16,6 +16,7 @@ struct QuizManager {
     ]
     
     var questionIndex = 0
+    var score = 0
     
     func checkAnswer(userAnswer: String) -> Bool {
         if userAnswer == quiz[questionIndex].answer {
@@ -34,11 +35,25 @@ struct QuizManager {
         return progress
     }
     
-    mutating func nextQuestion() {
+    mutating func nextQuestion() -> Bool {
         if (questionIndex < quiz.count - 1){
             questionIndex += 1
+            return true
         } else {
             questionIndex = 0
+            
+            return false
         }
     }
+    mutating func calculateScore(num: Int){
+        score += num
+        
+        if num == 0 {
+            score = 0
+        }
+    }
+    
+    
+    
+   
 }
