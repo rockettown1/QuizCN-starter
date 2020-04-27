@@ -1,5 +1,5 @@
 # QuizCN-starter
-Starter projects for simple iOS quiz app for CN students
+Starter project for simple iOS quiz app for CN students
 
 The master branch is the base starter project: Basic storyboard included but no code.
 
